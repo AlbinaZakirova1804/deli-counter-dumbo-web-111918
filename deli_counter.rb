@@ -1,12 +1,11 @@
-def line(katz_deli)
-  if katz_deli.size !==0
-    numbered_line = []
-    katz_deli.each_with do |name, index|
-      numbered_line << "#{index +1}. name"
-    end
-    print "The line is currently: #{numbered_line}"
-numbered_line
+def line(deli)
+  if deli.size ==0
+    puts 'The line is currently empty.'
   else
-    'The line is currently empty.'
+    numbered_line = []
+    deli.each_with_index do |name, index|
+      numbered_line << "#{index +1}. #{name}"
+    end
+    puts "The line is currently: #{numbered_line}"
   end
 end
