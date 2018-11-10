@@ -9,3 +9,7 @@ def line(deli)
     puts "The line is currently: #{numbered_line}"
   end
 end
+
+def take_a_number(deli, name)
+  new_deli_-waiting_line << deli.push(name)
+  
