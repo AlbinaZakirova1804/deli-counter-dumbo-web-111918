@@ -12,4 +12,5 @@ end
 
 def take_a_number(deli, name)
   new_deli_-waiting_line << deli.push(name)
-  
+  puts "Welcome, #{name}. You are number #{deli.size+1} in line deli.size"
+end
