@@ -3,16 +3,20 @@ def line(deli)
     puts 'The line is currently empty.'
   else
     numbered_line = []
-    
+    index=0
     deli.each_with_index do |name, index|
-      numbered_line << "#{index}. #{name}"
+      numbered_line << "#{index+1}. #{name}"
     end
     puts "The line is currently: #{numbered_line.join(" ")}"
   end
 end
 
 def take_a_number(deli, name)
-  deli << deli.push(name)
-end_of_line = deli.size
-  puts "Welcome, #{name}. You are number #{end_of_line+1} in line deli.size"
+  deli = deli.push(name)
+  puts "Welcome, #{name}. You are number #{deli.length} in line."
+end
+
+def now_serving(deli)
+  if 
+end
 end
