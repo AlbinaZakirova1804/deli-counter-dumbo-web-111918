@@ -20,9 +20,7 @@ def now_serving(deli)
   if deli.size == 0
     puts "There is nobody waiting to be served!"
   else 
-     numbered_line = []
-    index=0
-    deli.each_with_index do |name, index|
-      numbered_line << "#{index+1}. #{name}"
+      person_servinf_now = deli.shift
+      puts ""
 end
 end
